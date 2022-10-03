@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>TFlex.DOCs.MacroIntergation</AssemblyName>
+    <PackageId>35eefd53-6951-49c7-869d-0bd735d5cc62</PackageId>
+    <AssemblyTitle>T-FLEX DOCs 17 Macro Integration</AssemblyTitle>
+    <Description>Macro Integration</Description>
+    <FileVersion>17.2.1.0</FileVersion>
+    <InformationalVersion>17.2.1.0</InformationalVersion>
+    <AssemblyVersion>17.2.1.0</AssemblyVersion>
+    <Company>Top Systems</Company>
+    <Copyright>Copyright © 1989-2022 Top Systems, Ltd. All rights reserved.</Copyright>
+
+    <TargetFrameworks>net472</TargetFrameworks>
+    <DebugType>portable</DebugType>
+    <LangVersion>latest</LangVersion>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <NeutralLanguage>ru</NeutralLanguage>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <CodeAnalysisRuleSet>Global.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>CA1050</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DefineConstants>DEBUG;DIAGNOSTICS;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DefineConstants>RELEASE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Dynamic.Runtime" />
+    <Reference Include="System.Windows.Forms" />
+
+    <Reference Include="TFlex.DOCs.Model" HintPath="C:\Program Files (x86)\T-FLEX DOCs 17\Program\TFlex.DOCs.Model.dll" />
+    <Reference Include="TFlex.Model.Technology" HintPath="C:\Program Files (x86)\T-FLEX DOCs 17\Program\TFlex.Model.Technology.dll" />
+    <Reference Include="TFlex.Reporting.CAD" HintPath="C:\Program Files (x86)\T-FLEX DOCs 17\Program\TFlex.Reporting.CAD.dll" />
+    <Reference Include="TFlex.Reporting.Technology" HintPath="C:\Program Files (x86)\T-FLEX DOCs 17\Program\TFlex.Reporting.Technology.dll" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETCoreApp'">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Dynamic.Runtime" />
+    <Reference Include="System.Windows.Forms" />
+
+    <Reference Include="TFlex.DOCs.Model" HintPath="C:\Program Files (x86)\T-FLEX DOCs 17\Program\TFlex.DOCs.Model.dll" />
+    <Reference Include="TFlex.Model.Technology" HintPath="C:\Program Files (x86)\T-FLEX DOCs 17\Program\TFlex.Model.Technology.dll" />
+    <Reference Include="TFlex.Reporting.CAD" HintPath="C:\Program Files (x86)\T-FLEX DOCs 17\Program\TFlex.Reporting.CAD.dll" />
+    <Reference Include="TFlex.Reporting.Technology" HintPath="C:\Program Files (x86)\T-FLEX DOCs 17\Program\TFlex.Reporting.Technology.dll" />
+  </ItemGroup>
+
+</Project>
